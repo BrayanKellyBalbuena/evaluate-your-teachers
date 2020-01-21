@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Evaluate your teachers",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "js": ["jquery-3.4.1.min.js", "contents.js"],
+      "matches": [
+         "https://sed.unapec.edu.do/Estudiantes/EvaluacionDocentes"
+        ,"https://sed.unapec.edu.do/Estudiantes/EvaluarDocente?*"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+  }
+}
